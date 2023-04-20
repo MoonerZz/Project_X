@@ -1,0 +1,71 @@
+/*HTML*/
+body {
+    margin: 0;
+    background-color:  #142d4c;
+    font-family: MyFont;
+    color: #5d82af;
+}
+
+nav {
+    height: 5rem;
+}
+/*Header */
+
+.header-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: #5d82af solid 2px;
+    box-shadow: 0 10px 30px -10px #385170;
+}
+
+.header-bar .item-list{
+    display: flex;
+    align-items: center;
+}
+
+.header-bar ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+    align-items: center;
+}
+
+.header-bar ul li{
+    position: relative;
+    margin: 0 10px;
+    font-size: 18px;
+}
+.header-bar li:hover{
+    font-style: italic;
+    color: #9fd3c7;
+    transform: translatey(-3px);
+    font-weight: bold;
+    transition: all 0.30s cubic-bezier(0.645,0.045,0.355,1);
+}
+.first-letter{
+    color:#9fd3c7 ;
+    font-size: 15px;
+}
+
+#cv-btn{
+    position: relative;
+    background-color: transparent;
+    color: #9fd3c7;
+    border: #9fd3c7 1px solid;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-right: 25px;
+}
+
+#cv-btn:hover{
+    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+    background-color: #385170;
+}
+
+/*Font Faces */
+@font-face {
+    font-family: MyFont;
+    src: url(/resources/fonts/NotoSans-Regular.ttf);
+}
